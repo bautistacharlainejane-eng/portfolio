@@ -12,6 +12,8 @@ import iDo from "../assets/bg-images/what-i-do-bg.png";
 import getTouch from "../assets/bg-images/get-touch-bg.png";
 
 export default function Homepage() {
+
+    
   return (
     <>
       <main className="font-poppins bg-[#0D1210]">
