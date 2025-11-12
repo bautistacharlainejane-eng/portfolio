@@ -1,11 +1,9 @@
-import homeBg from "../assets/home-bg.jpg";
 import figmaIcon from "../assets/figma.png";
 import visual from "../assets/visual.png";
 import adobe from "../assets/adobe-illustrator.png";
 import design from "../assets/design.png";
 import code from "../assets/code.png";
 import market from "../assets/marketing.png";
-import webBg from "../assets/webBg.png";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
