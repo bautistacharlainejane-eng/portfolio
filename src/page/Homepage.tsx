@@ -1,7 +1,13 @@
-import figmaIcon from "../assets/figma.png";
-import visual from "../assets/visual.png";
-import adobe from "../assets/adobe-illustrator.png";
 import design from "../assets/design.png";
+import tech from "../assets/tech.png";
+import website_design from "../assets/website-design.png";
+import media from "../assets/media.png";
+
+import figma from "../assets/figma.png";
+import vs from "../assets/vs.png";
+import adobe from "../assets/adobe.png";
+import github from "../assets/github.png";
+
 import code from "../assets/code.png";
 import market from "../assets/marketing.png";
 
@@ -12,8 +18,6 @@ import iDo from "../assets/bg-images/what-i-do-bg.png";
 import getTouch from "../assets/bg-images/get-touch-bg.png";
 
 export default function Homepage() {
-
-    
   return (
     <>
       <main className="font-poppins bg-[#0D1210]">
@@ -28,7 +32,7 @@ export default function Homepage() {
           <section className="relative min-h-screen flex flex-col items-center bg-cover bg-center justify-center bg-no-repeat">
             <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
-            <div className="backdrop-blur-md bg-white/10 shadow-2xl md:w-3xl my-6 md:my-0 rounded-2xl px-16 py-12 md:px-24 md:py-12 mx-4 text-center justify-center">
+            <div className="backdrop-blur-md border-t border-r border-gray-100 bg-white/10 shadow-2xl md:w-3xl my-6 md:my-0 rounded-2xl px-16 py-12 md:px-24 md:py-12 mx-4 text-center justify-center">
               <p className="text-lg mb-2 text-white">Hi, I'm Laine!</p>
 
               <h1 className="text-3xl md:text-4xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
@@ -41,25 +45,6 @@ export default function Homepage() {
                 and mobile interfaces. Passionate about creating visually
                 compelling and user-friendly digital experiences.
               </p>
-
-              {/* Icons */}
-              <div className="flex space-x-3 mt-6 justify-center">
-                <img
-                  className="w-[28px] h-[28px] object-contain"
-                  src={figmaIcon}
-                  alt="Figma Icon"
-                />
-                <img
-                  className="w-[28px] h-[28px] object-contain"
-                  src={visual}
-                  alt="Visual Studio Icon"
-                />
-                <img
-                  className="w-[28px] h-[28px] object-contain"
-                  src={adobe}
-                  alt="Adobe Icon"
-                />
-              </div>
 
               {/* Buttons */}
               <div className="flex flex-wrap justify-center gap-3 mt-8">
@@ -85,37 +70,24 @@ export default function Homepage() {
               What I Do
             </h1>
             <div className="grid grid-cols-1 gap-y-4 md:grid-cols-3 md:gap-x-12 md:gap-y-12 mt-12 ">
-              <div className="group border-t border-l backdrop-blur-md bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
+              <div className="group space-y-4 border-t border-l backdrop-blur-md bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
                 <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
                   <img
                     className="w-[25px] h-[25px] object-contain"
-                    src={design}
-                    alt="Code Icon"
+                    src={website_design}
+                    alt="UI/UX Icon"
                   />
                 </div>
+                <p className="text-lg font-semibold">UI/UX Design</p>
 
                 <p>
                   I'm skilled on creating clean, intuitive, and user-centered
                   digital experiences. I combine research, design, and usability
-                  to build interfaces that are both functional and visually
-                  engaging.
+                  to build interfaces.
                 </p>
-
-                <div className="w-full mt-4 align-text-bottom">
-                  <div className="flex justify-between mb-1">
-                    <p className="text-lg font-semibold">UI/UX Design</p>
-                    <span className="text-lg font-semibold">100%</span>
-                  </div>
-                  <div className="w-full bg-gray-100 rounded-full h-3">
-                    <div
-                      className="bg-gray-100 h-3 rounded-full"
-                      style={{ width: "100%" }}
-                    ></div>
-                  </div>
-                </div>
               </div>
 
-              <div className="group backdrop-blur-md border-t bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
+              <div className="group space-y-4 backdrop-blur-md border-t bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
                 <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
                   <img
                     className="w-[25px] h-[25px] object-contain"
@@ -123,119 +95,66 @@ export default function Homepage() {
                     alt="Code Icon"
                   />
                 </div>
+                <p className="text-lg font-semibold">Frontend Development</p>
                 <p>
-                  I'm competent in building user-friendly websites and
-                  applications. I specialize in turning designs into clean,
-                  interactive code using Tailwind, JavaScript, and modern
-                  frameworks like React.
+                  I specialize in turning designs into clean, interactive code
+                  using Tailwind, JavaScript, and modern frameworks like React.
                 </p>
-                <div className="w-full mt-4 align-text-bottom">
-                  <div className="flex justify-between mb-1">
-                    <p className="text-lg font-semibold">
-                      Frontend Development
-                    </p>
-                    <span className="text-lg font-semibold">90%</span>
-                  </div>
-                  <div className="w-full bg-gray-500 rounded-full h-3">
-                    <div
-                      className="bg-gray-100 h-3 rounded-full"
-                      style={{ width: "90%" }}
-                    ></div>
-                  </div>
-                </div>
               </div>
 
-              <div className="group backdrop-blur-md border-t border-r bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
+              <div className="group space-y-4 backdrop-blur-md border-t border-r bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
+                <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
+                  <img
+                    className="w-[25px] h-[25px] object-contain"
+                    src={tech}
+                    alt="Technical Support Icon"
+                  />
+                </div>
+                <p className="text-lg font-semibold">Technical Support</p>
+
+                <p>
+                  I provide efficient technical assistance by maintaining system
+                  performance, and ensuring smooth operation of hardware and
+                  software
+                </p>
+              </div>
+
+              <div className="grou space-y-4 backdrop-blur-md border-b border-l bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
                 <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
                   <img
                     className="w-[25px] h-[25px] object-contain"
                     src={design}
-                    alt="Code Icon"
+                    alt="Graphic Design Icon"
                   />
                 </div>
+                <p className="text-lg font-semibold">Graphic Design</p>
 
                 <p>
-                  I'm skilled on creating clean, intuitive, and user-centered
-                  digital experiences. I combine research, design, and usability
-                  to build interfaces that are both functional and visually
-                  engaging.
+                  From logos and branding to digital, I focus on combining
+                  creativity and strategy to deliver impactful visuals that
+                  engage audiences.
                 </p>
-
-                <div className="w-full mt-4 align-text-bottom">
-                  <div className="flex justify-between mb-1">
-                    <p className="text-lg font-semibold">Technical Support</p>
-                    <span className="text-lg font-semibold">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-500 rounded-full h-3">
-                    <div
-                      className="bg-gray-100 h-3 rounded-full"
-                      style={{ width: "80%" }}
-                    ></div>
-                  </div>
-                </div>
               </div>
 
-              <div className="group backdrop-blur-md border-b border-l bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
+              <div className="group space-y-4 backdrop-blur-md border-b bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
                 <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
                   <img
                     className="w-[25px] h-[25px] object-contain"
-                    src={design}
-                    alt="Code Icon"
+                    src={media}
+                    alt="Media Management Icon"
                   />
                 </div>
 
-                <p>
-                  I'm skilled on creating clean, intuitive, and user-centered
-                  digital experiences. I combine research, design, and usability
-                  to build interfaces that are both functional and visually
-                  engaging.
-                </p>
-
-                <div className="w-full mt-4 align-text-bottom">
-                  <div className="flex justify-between mb-1">
-                    <p className="text-lg font-semibold">Graphic Design</p>
-                    <span className="text-lg font-semibold">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-500 rounded-full h-3">
-                    <div
-                      className="bg-gray-100 h-3 rounded-full"
-                      style={{ width: "80%" }}
-                    ></div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group backdrop-blur-md border-b bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
-                <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
-                  <img
-                    className="w-[25px] h-[25px] object-contain"
-                    src={design}
-                    alt="Code Icon"
-                  />
-                </div>
+                <p className="text-lg font-semibold"> Media Management</p>
 
                 <p>
-                  I'm skilled on creating clean, intuitive, and user-centered
-                  digital experiences. I combine research, design, and usability
-                  to build interfaces that are both functional and visually
-                  engaging.
+                  I handle and organize digital content across various
+                  platforms, ensuring consistent branding and effective audience
+                  engagement.
                 </p>
-
-                <div className="w-full mt-4 align-text-bottom">
-                  <div className="flex justify-between mb-1">
-                    <p className="text-lg font-semibold"> Media Management</p>
-                    <span className="text-lg font-semibold">100%</span>
-                  </div>
-                  <div className="w-full bg-gray-100 rounded-full h-3">
-                    <div
-                      className="bg-gray-100 h-3 rounded-full"
-                      style={{ width: "100%" }}
-                    ></div>
-                  </div>
-                </div>
               </div>
 
-              <div className="group backdrop-blur-md border-b border-r bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
+              <div className="group space-y-4 backdrop-blur-md border-b border-r bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
                 <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
                   <img
                     className="w-[25px] h-[25px] object-contain"
@@ -243,23 +162,12 @@ export default function Homepage() {
                     alt="Marketing Icon"
                   />
                 </div>
+                <p className="text-lg font-semibold"> Digital Marketing</p>
+
                 <p>
-                  I'm proficient in creating data-driven campaigns that boost
-                  brand visibility and drive engagement. I focus on social media
-                  promotions, email marketing to deliver measurable results.
+                  I create engaging promotional content that captures audience
+                  attention and drives brand growth
                 </p>
-                <div className="w-full mt-4 align-text-bottom">
-                  <div className="flex justify-between mb-1">
-                    <p className="text-lg font-semibold">Digital Marketing</p>
-                    <span className="text-lg font-semibold">80%</span>
-                  </div>
-                  <div className="w-full bg-gray-500 rounded-full h-3">
-                    <div
-                      className="bg-gray-100 h-3 rounded-full"
-                      style={{ width: "80%" }}
-                    ></div>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
@@ -268,7 +176,7 @@ export default function Homepage() {
 
           {/* Academic Background */}
 
-          <section className="px-6 py-8 md:py-12 md:px-12 space-y-6 text-gray-100">
+          {/* <section className="px-6 py-8 md:py-12 md:px-12 space-y-6 text-gray-100">
             <h1 className="text-3xl font-semibold flex justify-center">
               Academic Background
             </h1>
@@ -279,9 +187,9 @@ export default function Homepage() {
                 at PHINMA University of Pangasinan College of Urdaneta. During
                 her studies, she have taken on leadership roles such as being
                 elected Mayor of the Computer Science Society Department. She
-                also showcased her creativity and skills by becoming the
-                Champion of PUCU-Graphy 2022 (Photography Contest) and was
-                honored as the Outstanding Officer of the Year 2022.
+                also showcased her skills by becoming the Champion of
+                PUCU-Graphy 2022 (Photography Contest) and was honored as the
+                Outstanding Officer of the Year 2022.
               </p>
 
               <div className="max-w-xl mx-auto pt-4 md:p-0 ">
@@ -311,36 +219,97 @@ export default function Homepage() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           {/* End of Academic Background */}
 
           {/* Start of Work Experience */}
-
-          <section className="px-6 py-8 md:py-12 md:px-12 space-y-6 text-gray-100">
+          <section className="py-12 px-6 md:px-16 space-y-12 text-gray-100">
             <h1 className="text-3xl font-semibold flex justify-center">
               Work Experience
             </h1>
 
-            <div className="max-w-xl mx-auto pt-4 md:p-0 ">
-              <div className="border-l-4 border-gray-300 pl-6 space-y-10">
-                <div className="relative">
-                  <p className="text-sm text-gray-300">2025</p>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold">
-                      {" "}
-                      PHINMA University of Pangasinan College or Urdaneta
+            <div className="max-w-5xl mx-auto">
+              {/* Timeline */}
+              <div
+                className="relative flex flex-col gap-12 md:gap-16 
+      before:hidden md:before:block before:absolute before:top-0 before:bottom-0 before:left-1/2 before:w-px before:bg-gray-300"
+              >
+                {/* Item 1 */}
+                <div className="relative flex flex-col md:flex-row md:justify-between md:items-center">
+                  {/* Left side */}
+                  <div className="md:w-1/2 md:pr-8 text-right">
+                    <h3 className="text-lg font-semibold text-gray-300">
+                      The PMO Co.
                     </h3>
-                    <p className="text-sm text-gray-300">
-                      Graduate of Bachelor of Sscience in Computer Science
+                    <p className="text-sm text-gray-500">
+                      June, 2025 - Present
                     </p>
-                    <p className="text-sm text-gray-300">
-                      Selected Mayor of the Compuetr Science Society Department
+                  </div>
+
+                  {/* Timeline Dot */}
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#44594e] border-4 border-white rounded-full shadow"></div>
+
+                  {/* Right side */}
+                  <div className="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                    <h4 className="text-gray-100 font-semibold mb-1">
+                      UI/UX Designer and Frontend Developer
+                    </h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      Improving an existing website by developing new features,
+                      creating and refining user interfaces to enhance overall
+                      functionality, usability, and performance.
                     </p>
-                    <p className="text-sm text-gray-300">
-                      Champion in PUCU-Graphy 2022 (Photography Contest)
+                  </div>
+                </div>
+
+                {/* Item 2 */}
+                <div className="relative flex flex-col md:flex-row md:justify-between md:items-center">
+                  {/* Left side */}
+                  <div className="md:w-1/2 md:pr-8 text-right">
+                    <h3 className="text-lg font-semibold text-gray-300">
+                      Cura Property Management Corp.
+                    </h3>
+                    <p className="text-sm text-gray-500">
+                      December, 2024 - March, 2025
                     </p>
-                    <p className="text-sm text-gray-300">
-                      Awarded as Outstanding Officer of the Year 2022
+                  </div>
+
+                  {/* Timeline Dot */}
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#44594e] border-4 border-white rounded-full shadow"></div>
+
+                  {/* Right side */}
+                  <div className="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                    <h4 className="text-gray-100 font-semibold mb-1">
+                      IT Intern
+                    </h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      Enhancing an existing website by adding new features to
+                      improve functionality, user experience, and performance.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Item 3 */}
+                <div className="relative flex flex-col md:flex-row md:justify-between md:items-center">
+                  {/* Left side */}
+                  <div className="md:w-1/2 md:pr-8 text-right">
+                    <h3 className="text-lg font-semibold text-gray-300">
+                      Commission Project
+                    </h3>
+                    <p className="text-sm text-gray-500">2024</p>
+                  </div>
+
+                  {/* Timeline Dot */}
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#44594e] border-4 border-white rounded-full shadow"></div>
+
+                  {/* Right side */}
+                  <div className="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                    <h4 className="text-gray-100 font-semibold mb-1">
+                      Poster Advertisements and Website Design
+                    </h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      Utilized Figma and Adobe Illustrator for high-quality
+                      graphic design and user interface solutions.
                     </p>
                   </div>
                 </div>
@@ -351,10 +320,10 @@ export default function Homepage() {
           {/* End Start of Work Experience */}
 
           <section
-            className="relative flex flex-col justify-center py-14 px-8 mb-6 md:py-36 "
+            className="relative flex flex-col"
             style={{ backgroundImage: `url(${getTouch})` }}
           >
-            <div className="md:flex md:flex-col md:justify-center md:items-center">
+            <div className="md:flex md:flex-col md:justify-center md:items-center py-8 px-8 md:py-14">
               <h1 className="text-[#f7f7f7] text-3xl md:text-4xl font-bold mb-2 md:text-center">
                 Creating Digital Solutions That Connect, Engage, and Inspire
               </h1>
@@ -366,7 +335,62 @@ export default function Homepage() {
                 Get in touch
               </button>
             </div>
+
+  
+            <div className="backdrop-blur-sm mb-12 flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-12 md:space-y-0 py-8 px-8">
+              {/* Figma */}
+              <div className="flex items-center space-x-2">
+                <img
+                  className="aspect-ratio h-[35px] md:h-[50px] object-contain"
+                  src={figma}
+                  alt="Figma Icon"
+                />
+                <p className="text-[#F7F7F7] text-2xl font-medium">Figma</p>
+              </div>
+
+              {/* Visual Studio Code */}
+              <div className="flex items-center space-x-2">
+                <img
+                  className="aspect-ratio h-[35px] md:h-[50px] object-contain"
+                  src={vs}
+                  alt="Visual Studio Code Icon"
+                />
+                <p className="text-[#F7F7F7] text-2xl font-medium">
+                  Visual Studio Code
+                </p>
+              </div>
+
+              {/* GitHub */}
+              <div className="flex items-center space-x-2">
+                <img
+                  className="aspect-ratio h-[35px] md:h-[50px] object-contain"
+                  src={github}
+                  alt="GitHub Icon"
+                />
+                <p className="text-[#F7F7F7] text-2xl font-medium">GitHub</p>
+              </div>
+
+              {/* Adobe Illustrator */}
+              <div className="flex items-center space-x-2">
+                <img
+                  className="aspect-ratio h-[35px] md:h-[45px] object-contain"
+                  src={adobe}
+                  alt="Adobe Illustrator Icon"
+                />
+                <p className="text-[#F7F7F7] text-2xl font-medium">
+                  Adobe Illustrator
+                </p>
+              </div>
+            </div>
           </section>
+
+          {/* Projects */}
+
+          {/* <section className="px-6 py-8 md:py-12 md:px-12 space-y-6 text-gray-100">
+            <h1 className="text-3xl font-semibold flex justify-center">
+              Projects
+            </h1>
+          </section> */}
         </div>
         <Footer></Footer>
       </main>
