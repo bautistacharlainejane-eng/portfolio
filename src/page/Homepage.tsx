@@ -32,7 +32,7 @@ export default function Homepage() {
           <section className="relative min-h-screen flex flex-col items-center bg-cover bg-center justify-center bg-no-repeat">
             <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
-            <div className="backdrop-blur-md border-t border-r border-gray-100 bg-white/10 shadow-2xl md:w-3xl my-6 md:my-0 rounded-2xl px-16 py-12 md:px-24 md:py-12 mx-4 text-center justify-center">
+            <div className="backdrop-blur-md border-t border-r border-gray-100 bg-white/10 shadow-2xl md:w-3xl md:my-0 rounded-2xl px-16 py-12 md:px-24 md:py-12 mx-4 text-center justify-center">
               <p className="text-lg mb-2 text-white">Hi, I'm Laine!</p>
 
               <h1 className="text-3xl md:text-4xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
@@ -48,7 +48,7 @@ export default function Homepage() {
 
               {/* Buttons */}
               <div className="flex flex-wrap justify-center gap-3 mt-8">
-                <button className="py-2 px-6 bg-[#333533] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#4b4d4b] transition-colors">
+                <button className="py-2 px-6 bg-[#486948] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#243c24] transition-colors">
                   Get in touch
                 </button>
                 <button className="py-2 px-6 border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors">
@@ -64,7 +64,6 @@ export default function Homepage() {
 
           <section
             className="px-6 py-12 mb-6 md:py-20 md:px-16 bg-[#0D1210]"
-            style={{ backgroundImage: `url(${iDo})` }}
           >
             <h1 className="text-3xl font-semibold flex justify-center text-white">
               What I Do
@@ -331,7 +330,7 @@ export default function Homepage() {
                 Specialized in design, development, and strategic marketing.
               </p>
 
-              <button className="py-2 px-4 bg-[#333533] text-[#f8f9fa] rounded-full text-sn md:text-md mt-6">
+              <button className="py-2 px-4 bg-[#486948] text-[#f8f9fa] rounded-full text-sn md:text-md mt-6">
                 Get in touch
               </button>
             </div>
