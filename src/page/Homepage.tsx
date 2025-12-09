@@ -50,9 +50,13 @@ export default function Homepage() {
                 <button className="py-2 px-6 bg-[#486948] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#243c24] transition-colors">
                   Get in touch
                 </button>
-                <button className="py-2 px-6 border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors">
+                <a
+                  href="src/assets/projects/cjnb-cv.pdf"
+                  download
+                  className="py-2 px-6 border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors"
+                >
                   Download CV
-                </button>
+                </a>
               </div>
             </div>
           </section>
@@ -61,9 +65,7 @@ export default function Homepage() {
 
           {/* What I do */}
 
-          <section
-            className="px-6 py-12 mb-6 md:py-20 md:px-16 bg-[#0D1210]"
-          >
+          <section className="px-6 py-12 mb-6 md:py-20 md:px-16 bg-[#0D1210]">
             <h1 className="text-3xl font-semibold flex justify-center text-white">
               What I Do
             </h1>
@@ -96,7 +98,8 @@ export default function Homepage() {
                 <p className="text-lg font-semibold">Frontend Development</p>
                 <p>
                   I specialize in turning designs into clean, interactive code
-                  using Tailwind, JavaScript, Laravel and modern frameworks like React.
+                  using Tailwind, JavaScript, Laravel and modern frameworks like
+                  React.
                 </p>
               </div>
 
@@ -117,7 +120,7 @@ export default function Homepage() {
                 </p>
               </div>
 
-              <div className="grou space-y-4 backdrop-blur-md border-b border-l bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
+              <div className="group space-y-4 backdrop-blur-md border-b border-l bg-white/10 shadow-2xl rounded-xl p-4 transition-all duration-300 hover:shadow-lg hover:scale-105 text-gray-100">
                 <div className="md:mb-4 inline-flex items-center p-4 rounded-full w-fit bg-[#c9e4da] group-hover:bg-[#fdfdfd] transition-colors duration-300">
                   <img
                     className="w-[25px] h-[25px] object-contain"
@@ -169,7 +172,6 @@ export default function Homepage() {
               </div>
             </div>
           </section>
-
 
           {/* Start of Work Experience */}
           <section className="py-12 px-6 md:px-16 space-y-12 text-gray-100">
@@ -263,7 +265,7 @@ export default function Homepage() {
                   </div>
                 </div>
 
-                                {/* Item 4 */}
+                {/* Item 4 */}
                 <div className="relative flex flex-col md:flex-row md:justify-between md:items-center">
                   {/* Left side */}
                   <div className="md:w-1/2 md:pr-8 text-right">
@@ -282,15 +284,14 @@ export default function Homepage() {
                       Special Program Employment for Students
                     </h4>
                     <p className="text-gray-300 text-sm leading-relaxed">
-                     Conducted hazard mapping to support safety and risk management initiatives
+                      Conducted hazard mapping to support safety and risk
+                      management initiatives
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
-
 
           {/* End Start of Work Experience */}
 
@@ -311,7 +312,6 @@ export default function Homepage() {
               </button>
             </div>
 
-  
             <div className="backdrop-blur-sm mb-12 flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-12 md:space-y-0 py-8 px-8">
               {/* Figma */}
               <div className="flex items-center space-x-2">
