@@ -51,7 +51,7 @@ export default function Homepage() {
                   Get in touch
                 </button>
                 <a
-                  href="src/assets/projects/cjnb-cv.pdf"
+                  href="/projects/cjnb-cv.pdf"
                   download
                   className="py-2 px-6 border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors"
                 >
