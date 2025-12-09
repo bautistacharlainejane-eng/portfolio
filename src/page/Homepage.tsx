@@ -14,7 +14,6 @@ import market from "../assets/marketing.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import heroBg from "../assets/bg-images/hero-bg.png";
-import iDo from "../assets/bg-images/what-i-do-bg.png";
 import getTouch from "../assets/bg-images/get-touch-bg.png";
 
 export default function Homepage() {
@@ -97,7 +96,7 @@ export default function Homepage() {
                 <p className="text-lg font-semibold">Frontend Development</p>
                 <p>
                   I specialize in turning designs into clean, interactive code
-                  using Tailwind, JavaScript, and modern frameworks like React.
+                  using Tailwind, JavaScript, Laravel and modern frameworks like React.
                 </p>
               </div>
 
@@ -171,55 +170,6 @@ export default function Homepage() {
             </div>
           </section>
 
-          {/*End of What I do */}
-
-          {/* Academic Background */}
-
-          {/* <section className="px-6 py-8 md:py-12 md:px-12 space-y-6 text-gray-100">
-            <h1 className="text-3xl font-semibold flex justify-center">
-              Academic Background
-            </h1>
-
-            <div className="md:flex md:justify-between py-4 md:py-8 space-x-4">
-              <p className="md:w-1/2">
-                Graduated as Bachelor of Science in Computer Science (2021–2025)
-                at PHINMA University of Pangasinan College of Urdaneta. During
-                her studies, she have taken on leadership roles such as being
-                elected Mayor of the Computer Science Society Department. She
-                also showcased her skills by becoming the Champion of
-                PUCU-Graphy 2022 (Photography Contest) and was honored as the
-                Outstanding Officer of the Year 2022.
-              </p>
-
-              <div className="max-w-xl mx-auto pt-4 md:p-0 ">
-                <div className="border-l-4 border-gray-300 pl-6 space-y-10">
-                  <div className="relative">
-                    <p className="text-sm text-gray-300">2025</p>
-                    <div className="space-y-2">
-                      <h3 className="text-lg font-semibold">
-                        {" "}
-                        PHINMA University of Pangasinan College or Urdaneta
-                      </h3>
-                      <p className="text-sm text-gray-300">
-                        Graduate of Bachelor of Sscience in Computer Science
-                      </p>
-                      <p className="text-sm text-gray-300">
-                        Selected Mayor of the Compuetr Science Society
-                        Department
-                      </p>
-                      <p className="text-sm text-gray-300">
-                        Champion in PUCU-Graphy 2022 (Photography Contest)
-                      </p>
-                      <p className="text-sm text-gray-300">
-                        Awarded as Outstanding Officer of the Year 2022
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
-          {/* End of Academic Background */}
 
           {/* Start of Work Experience */}
           <section className="py-12 px-6 md:px-16 space-y-12 text-gray-100">
@@ -312,9 +262,35 @@ export default function Homepage() {
                     </p>
                   </div>
                 </div>
+
+                                {/* Item 4 */}
+                <div className="relative flex flex-col md:flex-row md:justify-between md:items-center">
+                  {/* Left side */}
+                  <div className="md:w-1/2 md:pr-8 text-right">
+                    <h3 className="text-lg font-semibold text-gray-300">
+                      Municipality of Sison Pangasinan
+                    </h3>
+                    <p className="text-sm text-gray-500">June-July, 2024</p>
+                  </div>
+
+                  {/* Timeline Dot */}
+                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#44594e] border-4 border-white rounded-full shadow"></div>
+
+                  {/* Right side */}
+                  <div className="md:w-1/2 md:pl-8 mt-6 md:mt-0">
+                    <h4 className="text-gray-100 font-semibold mb-1">
+                      Special Program Employment for Students
+                    </h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                     Conducted hazard mapping to support safety and risk management initiatives
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
+
+
 
           {/* End Start of Work Experience */}
 
@@ -323,7 +299,7 @@ export default function Homepage() {
             style={{ backgroundImage: `url(${getTouch})` }}
           >
             <div className="md:flex md:flex-col md:justify-center md:items-center py-8 px-8 md:py-14">
-              <h1 className="text-[#f7f7f7] text-3xl md:text-4xl font-bold mb-2 md:text-center">
+              <h1 className="text-[#f7f7f7] text-2xl md:text-3xl font-bold mb-2 md:text-center">
                 Creating Digital Solutions That Connect, Engage, and Inspire
               </h1>
               <p className="text-[#f7f7f7] text-lg md:text-xl">
