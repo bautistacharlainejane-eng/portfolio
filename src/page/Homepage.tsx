@@ -316,7 +316,7 @@ export default function Homepage() {
               {/* Figma */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[35px] md:h-[50px] object-contain"
+                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
                   src={figma}
                   alt="Figma Icon"
                 />
@@ -326,7 +326,7 @@ export default function Homepage() {
               {/* Visual Studio Code */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[35px] md:h-[50px] object-contain"
+                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
                   src={vs}
                   alt="Visual Studio Code Icon"
                 />
@@ -338,7 +338,7 @@ export default function Homepage() {
               {/* GitHub */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[35px] md:h-[50px] object-contain"
+                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
                   src={github}
                   alt="GitHub Icon"
                 />
@@ -348,7 +348,7 @@ export default function Homepage() {
               {/* Adobe Illustrator */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[35px] md:h-[45px] object-contain"
+                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
                   src={adobe}
                   alt="Adobe Illustrator Icon"
                 />
