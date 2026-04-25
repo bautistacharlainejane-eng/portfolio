@@ -14,8 +14,6 @@ import market from "../assets/marketing.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-
-
 export default function Homepage() {
   return (
     <>
@@ -26,12 +24,14 @@ export default function Homepage() {
           <Header></Header>
 
           <section
-            className="relative pb-16 min-h-screen justify-center flex flex-col overflow-hidden space-y-18
+            className="relative pb-16 min-h-screen justify-center flex flex-col overflow-hidden space-y-16
 "
           >
             <div className="grid grid-cols-1 md:grid-cols-2 items-center px-12 gap-8 md:gap-12">
               <div className="flex flex-col gap-8 ">
-                <p className="text-lg text-gray-100 pt-12 md:pt-0">Hey, I am Laine!</p>
+                <p className="text-lg text-gray-100 pt-12 md:pt-0">
+                  Hey, I am Laine!
+                </p>
 
                 <h1 className="text-4xl flex flex-col gap-4 md:text-6xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
                   UI/UX Designer & <span>Frontend Developer</span>
@@ -47,14 +47,14 @@ export default function Homepage() {
                   and mobile interfaces. Passionate about creating visually
                   compelling and user-friendly digital experiences.
                 </p>
-                <div className="flex gap-3 mt-6">
+                <div className="flex flex-col md:flex-row gap-3 mt-6">
                   <button className="py-2 px-6 bg-[#486948] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#243c24] transition-colors">
                     Get in touch
                   </button>
                   <a
                     href="/projects/cjnb-cv.pdf"
                     download
-                    className="py-2 px-6 border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors"
+                    className="py-2 px-6 text-center border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors"
                   >
                     Download CV
                   </a>
@@ -62,43 +62,44 @@ export default function Homepage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4 px-8 md:px-12 md:py-6 justify-between w-full">
+            <div className="flex flex-col md:flex-row gap-4 px-8 md:px-12 md:pt-24 justify-between w-full">
               <div className="text-gray-50 text-lg space-y-2">
                 <p className="text-green-500">
                   # <span className="text-gray-50">01</span>
                 </p>
+                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
 
                 <p> Web & Mobile Design</p>
               </div>
-              <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
               <div className="text-gray-50 text-lg space-y-2">
                 <p className="text-green-500">
                   # <span className="text-gray-50">02</span>
                 </p>
+                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
 
                 <p> Graphic Design</p>
               </div>
-                     <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
               <div className="text-gray-50 text-lg space-y-2">
                 <p className="text-green-500">
                   # <span className="text-gray-50">03</span>
                 </p>
+                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
 
                 <p> Frontend Development</p>
               </div>
-                     <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
               <div className="text-gray-50 text-lg space-y-2">
                 <p className="text-green-500">
                   # <span className="text-gray-50">04</span>
                 </p>
+                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
 
                 <p> Technical Assistant</p>
               </div>
-                     <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
               <div className="text-gray-50 text-lg space-y-2">
                 <p className="text-green-500">
                   # <span className="text-gray-50">05</span>
                 </p>
+                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
 
                 <p> Project Research</p>
               </div>
