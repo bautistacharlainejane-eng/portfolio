@@ -14,7 +14,7 @@ import market from "../assets/marketing.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import getTouch from "../assets/bg-images/get-touch-bg.png";
+
 
 export default function Homepage() {
   return (
