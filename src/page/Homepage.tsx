@@ -26,12 +26,12 @@ export default function Homepage() {
           <Header></Header>
 
           <section
-            className="relative pb-16 min-h-screen justify-center flex flex-col overflow-hidden space-y-16
+            className="relative pb-16 min-h-screen justify-center flex flex-col overflow-hidden space-y-18
 "
           >
             <div className="grid grid-cols-1 md:grid-cols-2 items-center px-12 gap-8 md:gap-12">
               <div className="flex flex-col gap-8 ">
-                <p className="text-lg text-gray-100">Hey, I'am Laine!</p>
+                <p className="text-lg text-gray-100 pt-12 md:pt-0">Hey, I am Laine!</p>
 
                 <h1 className="text-4xl flex flex-col gap-4 md:text-6xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
                   UI/UX Designer & <span>Frontend Developer</span>
@@ -62,7 +62,7 @@ export default function Homepage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4 px-8 md:px-12 justify-between w-full">
+            <div className="flex flex-col md:flex-row gap-4 px-8 md:px-12 md:py-6 justify-between w-full">
               <div className="text-gray-50 text-lg space-y-2">
                 <p className="text-green-500">
                   # <span className="text-gray-50">01</span>
