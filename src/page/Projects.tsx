@@ -1,4 +1,6 @@
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 
 import webDesignProject from "../assets/web-design-project.png";
 
@@ -88,6 +90,8 @@ export default function () {
             {/* End of Project 1 */}
           </div>
         </section>
+
+        <Footer></Footer>
       </main>
     </>
   );

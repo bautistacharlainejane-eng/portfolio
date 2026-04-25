@@ -13,50 +13,94 @@ import market from "../assets/marketing.png";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import heroBg from "../assets/bg-images/hero-bg.png";
+
 import getTouch from "../assets/bg-images/get-touch-bg.png";
 
 export default function Homepage() {
   return (
     <>
-      <main className="font-poppins bg-[#0D1210]">
+      <main className="font-poppins">
         {/* Hero Layout */}
 
-        <div
-          className="bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
+        <div className=" bg-[radial-gradient(circle_at_top,_#3f5f46_0%,_#0D1210_60%)]">
           <Header></Header>
 
-          <section className="relative min-h-screen flex flex-col items-center bg-cover bg-center justify-center bg-no-repeat">
-            <div className="absolute inset-0 bg-black/40 -z-10"></div>
+          <section
+            className="relative pb-16 min-h-screen justify-center flex flex-col overflow-hidden space-y-16
+"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center px-12 gap-8 md:gap-12">
+              <div className="flex flex-col gap-8 ">
+                <p className="text-lg text-gray-100">Hey, I'am Laine!</p>
 
-            <div className="backdrop-blur-md border-t border-r border-gray-100 bg-white/10 shadow-2xl md:w-3xl md:my-0 rounded-2xl px-16 py-12 md:px-24 md:py-12 mx-4 text-center justify-center">
-              <p className="text-lg mb-2 text-white">Hi, I'm Laine!</p>
+                <h1 className="text-4xl flex flex-col gap-4 md:text-6xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
+                  UI/UX Designer & <span>Frontend Developer</span>
+                </h1>
+              </div>
 
-              <h1 className="text-3xl md:text-4xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
-                UI/UX Designer & Frontend Developer
-              </h1>
+              <div className="space-y-2">
+                <p className=" mx-auto text-gray-50 leading-relaxed">
+                  Proficient in design, web development, and project execution.
+                </p>
+                <p className="mx-auto text-gray-300 leading-relaxed">
+                  Skilled in UI/UX, branding, agile management, and building web
+                  and mobile interfaces. Passionate about creating visually
+                  compelling and user-friendly digital experiences.
+                </p>
+                <div className="flex gap-3 mt-6">
+                  <button className="py-2 px-6 bg-[#486948] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#243c24] transition-colors">
+                    Get in touch
+                  </button>
+                  <a
+                    href="/projects/cjnb-cv.pdf"
+                    download
+                    className="py-2 px-6 border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors"
+                  >
+                    Download CV
+                  </a>
+                </div>
+              </div>
+            </div>
 
-              <p className="mt-6 max-w-2xl mx-auto text-gray-100 leading-relaxed">
-                Proficient in design, web development, and project execution.
-                Skilled in UI/UX, branding, agile management, and building web
-                and mobile interfaces. Passionate about creating visually
-                compelling and user-friendly digital experiences.
-              </p>
+            <div className="flex flex-col md:flex-row gap-4 px-8 md:px-12 justify-between w-full">
+              <div className="text-gray-50 text-lg space-y-2">
+                <p className="text-green-500">
+                  # <span className="text-gray-50">01</span>
+                </p>
 
-              {/* Buttons */}
-              <div className="flex flex-wrap justify-center gap-3 mt-8">
-                <button className="py-2 px-6 bg-[#486948] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#243c24] transition-colors">
-                  Get in touch
-                </button>
-                <a
-                  href="/projects/cjnb-cv.pdf"
-                  download
-                  className="py-2 px-6 border border-[#f8f9fa] text-[#f8f9fa] rounded-full text-sm font-medium hover:bg-[#f8f9fa] hover:text-[#333533] transition-colors"
-                >
-                  Download CV
-                </a>
+                <p> Web & Mobile Design</p>
+              </div>
+              <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
+              <div className="text-gray-50 text-lg space-y-2">
+                <p className="text-green-500">
+                  # <span className="text-gray-50">02</span>
+                </p>
+
+                <p> Graphic Design</p>
+              </div>
+                     <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
+              <div className="text-gray-50 text-lg space-y-2">
+                <p className="text-green-500">
+                  # <span className="text-gray-50">03</span>
+                </p>
+
+                <p> Frontend Development</p>
+              </div>
+                     <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
+              <div className="text-gray-50 text-lg space-y-2">
+                <p className="text-green-500">
+                  # <span className="text-gray-50">04</span>
+                </p>
+
+                <p> Technical Assistant</p>
+              </div>
+                     <div className="block md:hidden h-[1px] bg-gray-500 w-full" />
+              <div className="text-gray-50 text-lg space-y-2">
+                <p className="text-green-500">
+                  # <span className="text-gray-50">05</span>
+                </p>
+
+                <p> Project Research</p>
               </div>
             </div>
           </section>
@@ -65,7 +109,7 @@ export default function Homepage() {
 
           {/* What I do */}
 
-          <section className="px-6 py-12 mb-6 md:py-20 md:px-16 bg-[#0D1210]">
+          <section className="px-6 py-12 mb-6 md:py-20 md:px-16   ">
             <h1 className="text-3xl font-semibold flex justify-center text-white">
               What I Do
             </h1>
@@ -295,10 +339,7 @@ export default function Homepage() {
 
           {/* End Start of Work Experience */}
 
-          <section
-            className="relative flex flex-col"
-            style={{ backgroundImage: `url(${getTouch})` }}
-          >
+          <section className="relative flex flex-col">
             <div className="md:flex md:flex-col md:justify-center md:items-center py-8 px-8 md:py-14">
               <h1 className="text-[#f7f7f7] text-2xl md:text-3xl font-bold mb-2 md:text-center">
                 Creating Digital Solutions That Connect, Engage, and Inspire
@@ -358,14 +399,6 @@ export default function Homepage() {
               </div>
             </div>
           </section>
-
-          {/* Projects */}
-
-          {/* <section className="px-6 py-8 md:py-12 md:px-12 space-y-6 text-gray-100">
-            <h1 className="text-3xl font-semibold flex justify-center">
-              Projects
-            </h1>
-          </section> */}
         </div>
         <Footer></Footer>
       </main>
