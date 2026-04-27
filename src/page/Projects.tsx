@@ -5,11 +5,17 @@ import irpmi from "../assets/irpmi-mockup.png";
 import propsuite from "../assets/propsuite-ili-mockup.png";
 import graphicDesign from "../assets/graphic-designs.png";
 import postAds from "../assets/post-ads.png";
+import postAdsSecond from "../assets/postads-second.png";
+import arrowUp from "../assets/arrow.png"; 
+
 
 export default function () {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <>
@@ -157,7 +163,7 @@ export default function () {
               <div
                 id="graphic-design"
                 className="grid grid-cols-1 md:grid-cols-2 mt-12 px-4 md:px-8 gap-6 group/project relative overflow-hidden rounded-2xl bg-green-300/10 backdrop-blur-sm border border-green-900/50 transition-all duration-500 hover:border-green-900/80 hover:bg-green-900/30 mx-4 md:mx-12"
-                >
+              >
                 {/* TEXT SECTION */}
                 <div className="flex flex-col space-y-6 md:space-y-8 p-6 md:p-12 text-white">
                   <div>
@@ -184,21 +190,25 @@ export default function () {
                   </h3>
 
                   <ul className="space-y-2 text-sm md:text-base">
-                  
                     <li className="relative pl-6 before:content-['✔'] before:absolute before:left-0 before:text-green-500 before:font-bold">
                       Product Advertisement
                     </li>
-                     <li className="relative pl-6 before:content-['✔'] before:absolute before:left-0 before:text-green-500 before:font-bold">
+                    <li className="relative pl-6 before:content-['✔'] before:absolute before:left-0 before:text-green-500 before:font-bold">
                       Digital Marketing
                     </li>
                   </ul>
                 </div>
 
                 {/* IMAGE SECTION */}
-                <div className="flex items-center justify-center p-4 md:p-0">
+                <div className="flex items-center justify-center p-2 md:p-0">
                   <img
-                    className="w-full max-h-[300px] sm:max-h-[200px] md:max-h-[400px] rounded-xl object-contain"
+                    className="w-full max-h-[300px] sm:max-h-[100px] md:max-h-[300px] rounded-xl object-contain"
                     src={postAds}
+                    alt="UI/UX Icon"
+                  />
+                  <img
+                    className="w-full max-h-[300px] sm:max-h-[100px] md:max-h-[300px] rounded-xl object-contain"
+                    src={postAdsSecond}
                     alt="UI/UX Icon"
                   />
                 </div>
@@ -207,7 +217,7 @@ export default function () {
               <div
                 id="graphic-design"
                 className="grid grid-cols-1 md:grid-cols-2 mt-12 px-4 md:px-8 gap-6 group/project relative overflow-hidden rounded-2xl bg-green-300/10 backdrop-blur-sm border border-green-900/50 transition-all duration-500 hover:border-green-900/80 hover:bg-green-900/30 mx-4 md:mx-12"
-                >
+              >
                 {/* TEXT SECTION */}
                 <div className="flex flex-col space-y-6 md:space-y-8 p-6 md:p-12 text-white">
                   <div>
@@ -255,12 +265,26 @@ export default function () {
                   />
                 </div>
               </div>
-              
             </div>
 
             {/* Project 1 */}
           </div>
         </section>
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 z-50 
+  bg-green-100/40 hover:bg-green-800 
+  text-white w-14 h-14 flex items-center justify-center 
+  rounded-full shadow-lg 
+  transition-all duration-300 
+  backdrop-blur-md cursor-pointer"
+        >
+             <img
+                    className=" aspect-auto w-6 rounded-xl object-contain"
+                    src={arrowUp}
+                    alt="Arrow"
+                  />
+        </button>
 
         <Footer></Footer>
       </main>
