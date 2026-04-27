@@ -200,14 +200,14 @@ export default function () {
                 </div>
 
                 {/* IMAGE SECTION */}
-                <div className="flex items-center justify-center p-2 md:p-0">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 p-2 md:p-0">
                   <img
-                    className="w-full max-h-[300px] sm:max-h-[100px] md:max-h-[300px] rounded-xl object-contain"
+                    className="w-full max-h-[220px] sm:max-h-[250px] md:max-h-[300px] rounded-xl object-contain"
                     src={postAds}
                     alt="UI/UX Icon"
                   />
                   <img
-                    className="w-full max-h-[300px] sm:max-h-[100px] md:max-h-[300px] rounded-xl object-contain"
+                    className="w-full max-h-[220px] sm:max-h-[250px] md:max-h-[300px] rounded-xl object-contain"
                     src={postAdsSecond}
                     alt="UI/UX Icon"
                   />
