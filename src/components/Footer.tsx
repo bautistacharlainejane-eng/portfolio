@@ -14,8 +14,8 @@ export default function Footer (){
       <nav className="flex flex-wrap gap-4 text-sm text-gray-300 justify-end">
         <a href="#" className="hover:text-white">About</a>
         <a href="#" className="hover:text-white">Contact</a>
-        <a href="#" className="hover:text-white">Report</a>
-        <a href="#" className="hover:text-white">Privacy Policy</a>
+
+     
         <a href="#" className="hover:text-white">Terms of Service</a>
       </nav>
 
@@ -36,9 +36,9 @@ export default function Footer (){
     </div>
   </div>
 
-  <div className="mt-6 border-t border-gray-700 pt-6 text-sm flex flex-col md:flex-row justify-between items-center text-gray-400 gap-2">
-    <p>©2025, CJNB. All Rights Reserved</p>
-  </div>
+<div className="mt-6 border-t border-gray-700 pt-6 text-sm flex justify-center items-center text-gray-400">
+  <p className="text-center">©2025, CJNB. All Rights Reserved</p>
+</div>
 </footer>
 
 

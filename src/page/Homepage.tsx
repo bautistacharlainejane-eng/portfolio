@@ -27,15 +27,19 @@ export default function Homepage() {
             className="relative pb-16 min-h-screen justify-center flex flex-col overflow-hidden space-y-16
 "
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center px-12 gap-8 md:gap-12">
-              <div className="flex flex-col gap-8 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center px-12 gap-x-12 md:gap-8">
+              <div className="flex flex-col gap-4 ">
                 <p className="text-lg text-gray-100 pt-12 md:pt-0">
                   Hey, I am Laine!
                 </p>
-
-                <h1 className="text-4xl flex flex-col gap-4 md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
-                  UI/UX, Graphic Designer & <span>Frontend Developer</span>
+                <div>
+   <h1 className="text-4xl flex flex-col md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
+                  UI/UX & Graphic Designer 
                 </h1>
+                <h1 className="text-4xl flex flex-col md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">Frontend Developer</h1>
+                </div>
+
+             
               </div>
 
               <div className="space-y-2">
@@ -358,21 +362,21 @@ export default function Homepage() {
               {/* Figma */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
+                  className="aspect-ratio h-[20px] md:h-[30px] object-contain"
                   src={figma}
                   alt="Figma Icon"
                 />
-                <p className="text-[#F7F7F7] text-2xl font-medium">Figma</p>
+                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">Figma</p>
               </div>
 
               {/* Visual Studio Code */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
+                  className="aspect-ratio h-[20px] md:h-[30px] object-contain"
                   src={vs}
                   alt="Visual Studio Code Icon"
                 />
-                <p className="text-[#F7F7F7] text-2xl font-medium">
+                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">
                   Visual Studio Code
                 </p>
               </div>
@@ -380,21 +384,21 @@ export default function Homepage() {
               {/* GitHub */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
+                  className="aspect-ratio h-[20px] md:h-[30px] object-contain"
                   src={github}
                   alt="GitHub Icon"
                 />
-                <p className="text-[#F7F7F7] text-2xl font-medium">GitHub</p>
+                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">GitHub</p>
               </div>
 
               {/* Adobe Illustrator */}
               <div className="flex items-center space-x-2">
                 <img
-                  className="aspect-ratio h-[30px] md:h-[40px] object-contain"
+                  className="aspect-ratio h-[20px] md:h-[30px] object-contain"
                   src={adobe}
                   alt="Adobe Illustrator Icon"
                 />
-                <p className="text-[#F7F7F7] text-2xl font-medium">
+                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">
                   Adobe Illustrator
                 </p>
               </div>
