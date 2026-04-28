@@ -5,7 +5,7 @@ import irpmi from "../assets/irpmi-mockup.png";
 import propsuite from "../assets/propsuite-ili-mockup.png";
 import graphicDesign from "../assets/graphic-designs.png";
 import postAds from "../assets/post-ads.png";
-import postAdsSecond from "../assets/postads-second.png";
+import postAdsSecond from "../assets/sample-ads-sec.png";
 import arrowUp from "../assets/arrow.png"; 
 
 
