@@ -6,8 +6,7 @@ import propsuite from "../assets/propsuite-ili-mockup.png";
 import graphicDesign from "../assets/graphic-designs.png";
 import postAds from "../assets/post-ads.png";
 import postAdsSecond from "../assets/sample-ads-sec.png";
-import arrowUp from "../assets/arrow.png"; 
-
+import arrowUp from "../assets/arrow.png";
 
 export default function () {
   const scrollToSection = (id: string) => {
@@ -62,7 +61,7 @@ export default function () {
               <div
                 id="web-design"
                 className="grid grid-cols-1 md:grid-cols-2 mt-12 px-4 md:px-8 gap-6 group/project relative overflow-hidden rounded-2xl bg-green-300/10 backdrop-blur-sm border border-green-900/50 transition-all duration-500 hover:border-green-900/80 hover:bg-green-900/30 mx-4 md:mx-12"
-              >
+                >
                 {/* TEXT SECTION */}
                 <div className="flex flex-col space-y-6 md:space-y-8 p-6 md:p-12 text-white">
                   <div>
@@ -279,11 +278,11 @@ export default function () {
   transition-all duration-300 
   backdrop-blur-md cursor-pointer"
         >
-             <img
-                    className=" aspect-auto w-6 rounded-xl object-contain"
-                    src={arrowUp}
-                    alt="Arrow"
-                  />
+          <img
+            className=" aspect-auto w-6 rounded-xl object-contain"
+            src={arrowUp}
+            alt="Arrow"
+          />
         </button>
 
         <Footer></Footer>

@@ -33,8 +33,8 @@ export default function Homepage() {
                   Hey, I am Laine!
                 </p>
 
-                <h1 className="text-4xl flex flex-col gap-4 md:text-6xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
-                  UI/UX Designer & <span>Frontend Developer</span>
+                <h1 className="text-4xl flex flex-col gap-4 md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
+                  UI/UX, Graphic Designer & <span>Frontend Developer</span>
                 </h1>
               </div>
 
