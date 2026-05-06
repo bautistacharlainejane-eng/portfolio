@@ -4,8 +4,9 @@ import Footer from "../components/Footer";
 import irpmi from "../assets/irpmi-mockup.png";
 import propsuite from "../assets/propsuite-ili-mockup.png";
 import graphicDesign from "../assets/graphic-designs.png";
-import postAds from "../assets/post-ads.png";
 import postAdsSecond from "../assets/sample-ads-sec.png";
+import beanie from "../assets/beanie-ads.png";
+
 import arrowUp from "../assets/arrow.png";
 
 export default function () {
@@ -61,7 +62,7 @@ export default function () {
               <div
                 id="web-design"
                 className="grid grid-cols-1 md:grid-cols-2 mt-12 px-4 md:px-8 gap-6 group/project relative overflow-hidden rounded-2xl bg-green-300/10 backdrop-blur-sm border border-green-900/50 transition-all duration-500 hover:border-green-900/80 hover:bg-green-900/30 mx-4 md:mx-12"
-                >
+              >
                 {/* TEXT SECTION */}
                 <div className="flex flex-col space-y-6 md:space-y-8 p-6 md:p-12 text-white">
                   <div>
@@ -158,6 +159,54 @@ export default function () {
                   />
                 </div>
               </div>
+              <div
+                id="graphic-design"
+                className="grid grid-cols-1 md:grid-cols-2 mt-12 px-4 md:px-8 gap-6 group/project relative overflow-hidden rounded-2xl bg-green-300/10 backdrop-blur-sm border border-green-900/50 transition-all duration-500 hover:border-green-900/80 hover:bg-green-900/30 mx-4 md:mx-12"
+              >
+                {/* TEXT SECTION */}
+                <div className="flex flex-col space-y-6 md:space-y-8 p-6 md:p-12 text-white">
+                  <div>
+                    <span className="inline-block rounded-full bg-green-100/70 px-3 md:px-4 py-2 text-xs md:text-sm font-semibold text-green-700 border border-green-700 backdrop-blur-sm">
+                      Graphic Design
+                    </span>
+                  </div>
+
+                  <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
+                    Marketing, Advertisement, and Branding
+                  </p>
+
+                  <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
+
+                  <p className="text-sm md:text-md font-normal text-white/90">
+                    Visually engaging graphic designs created to communicate
+                    ideas clearly and effectively. Focused on consistency, brand
+                    identity, and creating eye-catching visuals across different
+                    platforms.
+                  </p>
+
+                  <h3 className="text-xs md:text-sm font-semibold text-gray-300 uppercase tracking-wider">
+                    Key Deliverables
+                  </h3>
+
+                  <ul className="space-y-2 text-sm md:text-base">
+                    <li className="relative pl-6 before:content-['✔'] before:absolute before:left-0 before:text-green-500 before:font-bold">
+                      Product Advertisement
+                    </li>
+                    <li className="relative pl-6 before:content-['✔'] before:absolute before:left-0 before:text-green-500 before:font-bold">
+                      Digital Marketing
+                    </li>
+                  </ul>
+                </div>
+
+                {/* IMAGE SECTION */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 p-2 md:p-0">
+                  <img
+                    className="w-full max-h-[300px] sm:max-h-[250px] md:max-h-[400px] rounded-xl object-contain"
+                    src={beanie}
+                    alt="UI/UX Icon"
+                  />
+                </div>
+              </div>
 
               <div
                 id="graphic-design"
@@ -200,13 +249,9 @@ export default function () {
 
                 {/* IMAGE SECTION */}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-2 p-2 md:p-0">
+                
                   <img
-                    className="w-full max-h-[220px] sm:max-h-[250px] md:max-h-[300px] rounded-xl object-contain"
-                    src={postAds}
-                    alt="UI/UX Icon"
-                  />
-                  <img
-                    className="w-full max-h-[220px] sm:max-h-[250px] md:max-h-[300px] rounded-xl object-contain"
+                    className="w-full max-h-[220px] sm:max-h-[300px] md:max-h-[400px] rounded-xl object-contain"
                     src={postAdsSecond}
                     alt="UI/UX Icon"
                   />
