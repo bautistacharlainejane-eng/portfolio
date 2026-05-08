@@ -6,6 +6,7 @@ import propsuite from "../assets/propsuite-ili-mockup.png";
 import graphicDesign from "../assets/graphic-designs.png";
 import postAdsSecond from "../assets/sample-ads-sec.png";
 import beanie from "../assets/beanie-ads.png";
+import maison from "../assets/perfume-ads.png";
 
 import arrowUp from "../assets/arrow.png";
 
@@ -249,12 +250,17 @@ export default function () {
 
                 {/* IMAGE SECTION */}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-2 p-2 md:p-0">
-                
+                   <img
+                    className="w-full max-h-[200px] sm:max-h-[200px] md:max-h-[350px] rounded-xl object-contain"
+                    src={maison}
+                    alt="UI/UX Icon"
+                  />
                   <img
-                    className="w-full max-h-[220px] sm:max-h-[300px] md:max-h-[400px] rounded-xl object-contain"
+                    className="w-full max-h-[200px] sm:max-h-[200px] md:max-h-[300px] rounded-xl object-contain"
                     src={postAdsSecond}
                     alt="UI/UX Icon"
                   />
+                
                 </div>
               </div>
 
