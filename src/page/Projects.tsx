@@ -2,9 +2,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import irpmi from "../assets/irpmi-mockup.png";
-import propsuite from "../assets/propsuite-ili-mockup.png";
+
 import graphicDesign from "../assets/graphic-designs.png";
-import postAdsSecond from "../assets/sample-ads-sec.png";
+
 import beanie from "../assets/beanie-ads.png";
 import maison from "../assets/perfume-ads.png";
 import landingImg from "../assets/landing-one.png";
