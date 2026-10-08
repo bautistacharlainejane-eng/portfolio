@@ -33,13 +33,13 @@ export default function Homepage() {
                   Hey, I am Laine!
                 </p>
                 <div>
-   <h1 className="text-4xl flex flex-col md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
-                  UI/UX & Graphic Designer 
-                </h1>
-                <h1 className="text-4xl flex flex-col md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">Frontend Developer</h1>
+                  <h1 className="text-4xl flex flex-col md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
+                    UI/UX & Graphic Designer
+                  </h1>
+                  <h1 className="text-4xl flex flex-col md:text-5xl font-bold transition-all duration-300 hover:scale-105 text-[#B2D3C2] hover:text-gray-200">
+                    Frontend Developer
+                  </h1>
                 </div>
-
-             
               </div>
 
               <div className="space-y-2">
@@ -66,46 +66,89 @@ export default function Homepage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row gap-4 px-8 md:px-12 md:pt-24 justify-between w-full">
-              <div className="text-gray-50 text-lg space-y-2">
-                <p className="text-green-500">
-                  # <span className="text-gray-50">01</span>
-                </p>
-                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
+            <div className="relative md:mt-12 w-full overflow-hidden">
+              <div className="flex w-max animate-[marquee_20s_linear_infinite] gap-16 px-8 md:gap-24 md:px-12">
+                {/* SET 1 */}
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">01</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Web & Mobile Design</p>
+                </div>
 
-                <p> Web & Mobile Design</p>
-              </div>
-              <div className="text-gray-50 text-lg space-y-2">
-                <p className="text-green-500">
-                  # <span className="text-gray-50">02</span>
-                </p>
-                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">02</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Graphic Design</p>
+                </div>
 
-                <p> Graphic Design</p>
-              </div>
-              <div className="text-gray-50 text-lg space-y-2">
-                <p className="text-green-500">
-                  # <span className="text-gray-50">03</span>
-                </p>
-                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">03</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Frontend Development</p>
+                </div>
 
-                <p> Frontend Development</p>
-              </div>
-              <div className="text-gray-50 text-lg space-y-2">
-                <p className="text-green-500">
-                  # <span className="text-gray-50">04</span>
-                </p>
-                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">04</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Technical Assistant</p>
+                </div>
 
-                <p> Technical Assistant</p>
-              </div>
-              <div className="text-gray-50 text-lg space-y-2">
-                <p className="text-green-500">
-                  # <span className="text-gray-50">05</span>
-                </p>
-                <div className="h-1 w-10 md:w-12 bg-gradient-to-r from-green-600 to-green-300 rounded-full"></div>
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">05</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Project Research</p>
+                </div>
 
-                <p> Project Research</p>
+                {/* SET 2 — DUPLICATE FOR SEAMLESS LOOP */}
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">01</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Web & Mobile Design</p>
+                </div>
+
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">02</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Graphic Design</p>
+                </div>
+
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">03</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Frontend Development</p>
+                </div>
+
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">04</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Technical Assistant</p>
+                </div>
+
+                <div className="flex shrink-0 flex-col gap-2 text-lg text-gray-50">
+                  <p className="text-green-500">
+                    # <span className="text-gray-50">05</span>
+                  </p>
+                  <div className="h-1 w-10 rounded-full bg-gradient-to-r from-green-600 to-green-300 md:w-12" />
+                  <p>Project Research</p>
+                </div>
               </div>
             </div>
           </section>
@@ -366,7 +409,9 @@ export default function Homepage() {
                   src={figma}
                   alt="Figma Icon"
                 />
-                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">Figma</p>
+                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">
+                  Figma
+                </p>
               </div>
 
               {/* Visual Studio Code */}
@@ -388,7 +433,9 @@ export default function Homepage() {
                   src={github}
                   alt="GitHub Icon"
                 />
-                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">GitHub</p>
+                <p className="text-[#F7F7F7] text-xl sm:text-2xl font-medium">
+                  GitHub
+                </p>
               </div>
 
               {/* Adobe Illustrator */}
