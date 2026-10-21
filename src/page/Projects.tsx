@@ -8,6 +8,7 @@ import graphicDesign from "../assets/graphic-designs.png";
 import beanie from "../assets/beanie-ads.png";
 import maison from "../assets/perfume-ads.png";
 import ilibrochureb from "../assets/ili-brochure-back.png";
+import ilistandee from "../assets/ili-standee.png";
 import ilibrochuref from "../assets/ili-brochure-front.png";
 import landingImg from "../assets/landing-one.png";
 import landingImg1 from "../assets/landing-two.png";
@@ -301,19 +302,33 @@ export default function Projects() {
                       </div>
 
                       {/* BROCHURE IMAGES */}
-                      <div className="flex min-h-[260px] items-center justify-center p-4 md:min-h-full md:p-5">
-                        <div className="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-black/10 p-3">
-                          <img
-                            src={ilibrochureb}
-                            alt="PropSuite-Ili brochure - front"
-                            className="max-h-[155px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02] md:max-h-[165px]"
-                          />
 
-                          <img
-                            src={ilibrochuref}
-                            alt="PropSuite-Ili brochure - back"
-                            className="max-h-[155px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02] md:max-h-[165px]"
-                          />
+                      {/* IMAGE SECTION */}
+                      <div className="flex min-h-[260px] items-center justify-center p-4 md:min-h-full md:p-5">
+                        <div className="grid w-full grid-cols-2 items-center gap-3 rounded-2xl bg-black/10 p-3">
+                          {/* STANDEE - LEFT SIDE */}
+                          <div className="flex h-full items-center justify-center">
+                            <img
+                              src={ilistandee}
+                              alt="PropSuite-Ili promotional standee"
+                              className="h-full max-h-[340px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02] md:max-h-[360px]"
+                            />
+                          </div>
+
+                          {/* TWO BROCHURES - RIGHT SIDE */}
+                          <div className="flex min-w-0 flex-col items-center justify-center gap-3">
+                            <img
+                              src={ilibrochureb}
+                              alt="PropSuite-Ili brochure - front"
+                              className="max-h-[165px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02]"
+                            />
+
+                            <img
+                              src={ilibrochuref}
+                              alt="PropSuite-Ili brochure - back"
+                              className="max-h-[165px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02]"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
