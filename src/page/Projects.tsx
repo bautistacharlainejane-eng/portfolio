@@ -7,6 +7,8 @@ import graphicDesign from "../assets/graphic-designs.png";
 
 import beanie from "../assets/beanie-ads.png";
 import maison from "../assets/perfume-ads.png";
+import ilibrochureb from "../assets/ili-brochure-back.png";
+import ilibrochuref from "../assets/ili-brochure-front.png";
 import landingImg from "../assets/landing-one.png";
 import landingImg1 from "../assets/landing-two.png";
 
@@ -255,6 +257,68 @@ export default function Projects() {
                   </div>
 
                   {/* PROJECT 2 */}
+
+                  <div className="group/project w-[85vw] max-w-[760px] shrink-0 snap-center overflow-hidden rounded-3xl border border-green-900/40 bg-green-300/[0.08] backdrop-blur-md transition-all duration-500 hover:border-green-700/60 hover:bg-green-900/[0.14]">
+                    <div className="grid min-h-[420px] grid-cols-1 md:grid-cols-[0.9fr_1.1fr]">
+                      {/* TEXT */}
+                      <div className="flex flex-col justify-center p-7 sm:p-8 md:p-10 lg:p-12">
+                        <span className="mb-5 w-fit rounded-full border border-green-700/60 bg-green-100/10 px-4 py-2 text-xs font-semibold text-green-300 backdrop-blur-sm">
+                          Graphic Design
+                        </span>
+
+                        <h3 className="max-w-md text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl">
+                          Digital Marketing
+                        </h3>
+
+                        <div className="mt-5 h-1 w-12 rounded-full bg-gradient-to-r from-green-600 to-green-300" />
+
+                        <div className="mt-6">
+                          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-white/40">
+                            Key Deliverables
+                          </p>
+
+                          <ul className="space-y-3 text-sm text-white/80 sm:text-base">
+                            <li className="flex items-center gap-3">
+                              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500/15 text-xs text-green-400">
+                                ✓
+                              </span>
+                              <span>Product and Feature Promotion</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500/15 text-xs text-green-400">
+                                ✓
+                              </span>
+                              <span>Brand Awareness</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500/15 text-xs text-green-400">
+                                ✓
+                              </span>
+                              <span>Website and Mobile App Promotion</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      {/* BROCHURE IMAGES */}
+                      <div className="flex min-h-[260px] items-center justify-center p-4 md:min-h-full md:p-5">
+                        <div className="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-black/10 p-3">
+                          <img
+                            src={ilibrochureb}
+                            alt="PropSuite-Ili brochure - front"
+                            className="max-h-[155px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02] md:max-h-[165px]"
+                          />
+
+                          <img
+                            src={ilibrochuref}
+                            alt="PropSuite-Ili brochure - back"
+                            className="max-h-[155px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02] md:max-h-[165px]"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="group/project w-[85vw] max-w-[760px] shrink-0 snap-center overflow-hidden rounded-3xl border border-green-900/40 bg-green-300/[0.08] backdrop-blur-md transition-all duration-500 hover:border-green-700/60 hover:bg-green-900/[0.14]">
                     <div className="grid min-h-[420px] grid-cols-1 md:grid-cols-[0.9fr_1.1fr]">
                       {/* TEXT */}
