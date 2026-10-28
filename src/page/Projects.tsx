@@ -245,13 +245,67 @@ export default function Projects() {
                       </div>
 
                       {/* IMAGE */}
+
                       <div className="flex min-h-[260px] items-center justify-center p-6 md:min-h-full md:p-8">
                         <div className="flex h-full w-full items-center justify-center rounded-2xl bg-black/10 p-3">
-                          <img
-                            src={beanie}
-                            alt="Marketing, Advertisement, and Branding"
-                            className="max-h-[280px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.03] md:max-h-[340px]"
-                          />
+                          <button
+                            type="button"
+                            onClick={() =>
+                              window.open(
+                                beanie,
+                                "_blank",
+                                "noopener,noreferrer",
+                              )
+                            }
+                            className="group/image relative cursor-zoom-in overflow-hidden rounded-xl
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
+                            aria-label="View Marketing, Advertisement, and Branding image in full size"
+                          >
+                            <img
+                              src={beanie}
+                              alt="Marketing, Advertisement, and Branding"
+                              className="max-h-[280px] w-full rounded-xl object-contain
+          transition-all duration-500 ease-out
+          group-hover/image:scale-[1.03]
+          group-hover/image:brightness-75
+          group-hover/image:shadow-[0_0_25px_rgba(74,222,128,0.25)]
+          md:max-h-[340px]"
+                            />
+
+                            {/* Hover Overlay */}
+                            <div
+                              className="absolute inset-0 flex items-center justify-center
+          rounded-xl bg-black/0 opacity-0
+          transition-all duration-300
+          group-hover/image:bg-black/20
+          group-hover/image:opacity-100"
+                            >
+                              <div
+                                className="flex translate-y-3 items-center gap-2 rounded-full
+            border border-white/20 bg-black/70 px-4 py-2
+            text-sm font-medium text-white shadow-lg backdrop-blur-md
+            transition-transform duration-300
+            group-hover/image:translate-y-0"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="18"
+                                  height="18"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                >
+                                  <circle cx="11" cy="11" r="8" />
+                                  <path d="m21 21-4.35-4.35" />
+                                  <path d="M11 8v6M8 11h6" />
+                                </svg>
+                                <span>Click to view</span>
+                              </div>
+                            </div>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -268,7 +322,7 @@ export default function Projects() {
                         </span>
 
                         <h3 className="max-w-md text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-4xl">
-                          Digital Marketing
+                          Standee and Brochure Design
                         </h3>
 
                         <div className="mt-5 h-1 w-12 rounded-full bg-gradient-to-r from-green-600 to-green-300" />
@@ -283,14 +337,9 @@ export default function Projects() {
                               <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500/15 text-xs text-green-400">
                                 ✓
                               </span>
-                              <span>Product and Feature Promotion</span>
+                              <span>Printed Marketing Materials</span>
                             </li>
-                            <li className="flex items-center gap-3">
-                              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500/15 text-xs text-green-400">
-                                ✓
-                              </span>
-                              <span>Brand Awareness</span>
-                            </li>
+                            
                             <li className="flex items-center gap-3">
                               <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-500/15 text-xs text-green-400">
                                 ✓
@@ -307,27 +356,136 @@ export default function Projects() {
                       <div className="flex min-h-[260px] items-center justify-center p-4 md:min-h-full md:p-5">
                         <div className="grid w-full grid-cols-2 items-center gap-3 rounded-2xl bg-black/10 p-3">
                           {/* STANDEE - LEFT SIDE */}
+
+                          {/* PROMOTIONAL STANDEE - LEFT SIDE */}
                           <div className="flex h-full items-center justify-center">
-                            <img
-                              src={ilistandee}
-                              alt="PropSuite-Ili promotional standee"
-                              className="h-full max-h-[340px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02] md:max-h-[360px]"
-                            />
+                            <button
+                              type="button"
+                              onClick={() =>
+                                window.open(
+                                  ilistandee,
+                                  "_blank",
+                                  "noopener,noreferrer",
+                                )
+                              }
+                              aria-label="View PropSuite-Ili promotional standee in full size"
+                              className="group/standee relative flex h-full w-full cursor-zoom-in items-center justify-center overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
+                            >
+                              <img
+                                src={ilistandee}
+                                alt="PropSuite-Ili promotional standee"
+                                className="h-full max-h-[340px] w-full object-contain transition-all duration-500 ease-out group-hover/standee:scale-[1.02] group-hover/standee:brightness-75 md:max-h-[360px]"
+                              />
+
+                              <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-black/0 opacity-0 transition-all duration-300 group-hover/standee:bg-black/20 group-hover/standee:opacity-100">
+                                <span className="flex translate-y-2 items-center gap-2 rounded-full border border-white/20 bg-black/70 px-3 py-2 text-xs font-medium text-white shadow-lg backdrop-blur-md transition-transform duration-300 group-hover/standee:translate-y-0">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <circle cx="11" cy="11" r="8" />
+                                    <path d="m21 21-4.35-4.35" />
+                                    <path d="M11 8v6M8 11h6" />
+                                  </svg>
+                                  Click to view
+                                </span>
+                              </div>
+                            </button>
                           </div>
 
                           {/* TWO BROCHURES - RIGHT SIDE */}
                           <div className="flex min-w-0 flex-col items-center justify-center gap-3">
-                            <img
-                              src={ilibrochureb}
-                              alt="PropSuite-Ili brochure - front"
-                              className="max-h-[165px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02]"
-                            />
+                            {/* BROCHURE FRONT */}
+                            <button
+                              type="button"
+                              onClick={() =>
+                                window.open(
+                                  ilibrochureb,
+                                  "_blank",
+                                  "noopener,noreferrer",
+                                )
+                              }
+                              aria-label="View PropSuite-Ili brochure front in full size"
+                              className="group/brochure relative w-full cursor-zoom-in overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
+                            >
+                              <img
+                                src={ilibrochureb}
+                                alt="PropSuite-Ili brochure - front"
+                                className="max-h-[165px] w-full object-contain transition-all duration-500 ease-out group-hover/brochure:scale-[1.03] group-hover/brochure:brightness-75"
+                              />
 
-                            <img
-                              src={ilibrochuref}
-                              alt="PropSuite-Ili brochure - back"
-                              className="max-h-[165px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.02]"
-                            />
+                              <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-black/0 opacity-0 transition-all duration-300 group-hover/brochure:bg-black/20 group-hover/brochure:opacity-100">
+                                <span className="flex translate-y-2 items-center gap-2 rounded-full border border-white/20 bg-black/70 px-3 py-2 text-xs font-medium text-white shadow-lg backdrop-blur-md transition-transform duration-300 group-hover/brochure:translate-y-0">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <circle cx="11" cy="11" r="8" />
+                                    <path d="m21 21-4.35-4.35" />
+                                    <path d="M11 8v6M8 11h6" />
+                                  </svg>
+                                  Click to view
+                                </span>
+                              </div>
+                            </button>
+
+                            {/* BROCHURE BACK */}
+                            <button
+                              type="button"
+                              onClick={() =>
+                                window.open(
+                                  ilibrochuref,
+                                  "_blank",
+                                  "noopener,noreferrer",
+                                )
+                              }
+                              aria-label="View PropSuite-Ili brochure back in full size"
+                              className="group/brochure relative w-full cursor-zoom-in overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
+                            >
+                              <img
+                                src={ilibrochuref}
+                                alt="PropSuite-Ili brochure - back"
+                                className="max-h-[165px] w-full object-contain transition-all duration-500 ease-out group-hover/brochure:scale-[1.03] group-hover/brochure:brightness-75"
+                              />
+
+                              <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-black/0 opacity-0 transition-all duration-300 group-hover/brochure:bg-black/20 group-hover/brochure:opacity-100">
+                                <span className="flex translate-y-2 items-center gap-2 rounded-full border border-white/20 bg-black/70 px-3 py-2 text-xs font-medium text-white shadow-lg backdrop-blur-md transition-transform duration-300 group-hover/brochure:translate-y-0">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <circle cx="11" cy="11" r="8" />
+                                    <path d="m21 21-4.35-4.35" />
+                                    <path d="M11 8v6M8 11h6" />
+                                  </svg>
+                                  Click to view
+                                </span>
+                              </div>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -372,15 +530,49 @@ export default function Projects() {
                       </div>
 
                       {/* IMAGE */}
-                      <div className="flex min-h-[260px] items-center justify-center p-6 md:min-h-full md:p-8">
-                        <div className="flex h-full w-full items-center justify-center rounded-2xl bg-black/10 p-3">
-                          <img
-                            src={maison}
-                            alt="Social Media Advertisement"
-                            className="max-h-[280px] w-full object-contain transition-transform duration-500 group-hover/project:scale-[1.03] md:max-h-[340px]"
-                          />
-                        </div>
-                      </div>
+                      
+<div className="flex min-h-[260px] items-center justify-center p-6 md:min-h-full md:p-8">
+  <div className="flex h-full w-full items-center justify-center rounded-2xl bg-black/10 p-3">
+    <button
+      type="button"
+      onClick={() =>
+        window.open(maison, "_blank", "noopener,noreferrer")
+      }
+      aria-label="View Social Media Advertisement in full size"
+      className="group/maison relative w-full cursor-zoom-in overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400"
+    >
+      <img
+        src={maison}
+        alt="Social Media Advertisement"
+        className="max-h-[280px] w-full object-contain transition-all duration-500 ease-out group-hover/maison:scale-[1.03] group-hover/maison:brightness-75 md:max-h-[340px]"
+      />
+
+      {/* HOVER OVERLAY */}
+      <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-black/0 opacity-0 transition-all duration-300 group-hover/maison:bg-black/20 group-hover/maison:opacity-100">
+        <span className="flex translate-y-2 items-center gap-2 rounded-full border border-white/20 bg-black/70 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-md transition-transform duration-300 group-hover/maison:translate-y-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+            <path d="M11 8v6M8 11h6" />
+          </svg>
+          Click to view
+        </span>
+      </div>
+    </button>
+  </div>
+</div>
+
                     </div>
                   </div>
                 </div>
